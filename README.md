@@ -15,15 +15,22 @@ Kebutuhan dokumentasi untuk pengembangan, perbaikan dan perilisan suatu perangka
 7. Versi major **X** (X.y.z | X > 0) **HARUS** dinaikkan jika ada perubahan yang membuat versi baru tidak kompatibel dengan versi lama, seperti menghapus fitur lama, menambah fitur baru yang tidak **BISA** digunakan di versi lama, **BISA** diubah bersama dengan versi patch dan minor, jika versi major dinaikkan, maka versi minor dan patch **HARUS** dikembalikan ke angka 0.
 8. Versi sebelum rilis ke publik **BISA** ditulis dengan menambahkan garis pemisah dangan dan diikuti angka yang selalu increment jika ada build perangkat lunak baru (contoh 2.0.2-4)
 
-## Flow Git
+## Git-Flow
 
-![branching git](https://www.campingcoder.com/post/20180412-git-flow.png)
+Suatu konsep alur bercabangan dan penggabungan *source code* dalam meggunakan *versioning control Git* untuk mengembangkan, memperbaiki dan merilis suatu aplikasi.
 
-### Branch
+### Kenapa HARUS meggunakan git-Flow
+
+* Setiap anggota tim dapat mengerjakan pengembangan atau perbaikan di *branch* masing-masing tanpa khawatir terjadi *conflict*
+* Mudah Tracking perubahan yang dilakukan setiap anggota tim
+
+![branching git](https://wac-cdn.atlassian.com/dam/jcr:34c86360-8dea-4be4-92f7-6597d4d5bfae/02%20Feature%20branches.svg?cdnVersion=365)
+
+### Branching
 Dalam  pengembangan, perbaikan dan perilisan perangkat lunak membutuhkan beberapa *branch* :
 
-1. `master` : *branch* berisikan *source code* yang menjadi acuan dalam **perilisan** dan **pengembangan**.
-2. `dev` : *branch* berisikan *source code* yang menjadi acuna dalam **pengembangan** dan **perbaikan**.
-3. `feature/` : dalam **mengembangakan** kode untuk fitur baru, nama *branch* diawalai `feature/` dan diikuti nama *branch* yang mendiskripsikan nama fitur baru tersebut, contoh `feature/fitur-lupa-password`
-4. `bug-fix/` : perbaikan *source code* atas bug yang ditemukan, buat *branch* baru dengan penamaan yang dawalai `bug-fix/` diikuti *branch* mendiskripsikan nama fitur baru tersebut, contoh `bug-fix/data-nomor-ktp-tidak-terkirim`
+1. `master` : *branch* berisikan *source code* yang menjadi acuan **pengembangan** (**cabang utama**) dan menyimpan **riwayat rilis** resmi. 
+2. `dev` : *branch* yang berisi riwayat lengkap dalam pengembangan dan perbaikan, cabang ini hasil *cloning* cabang `master` dan jika ada perubahan untuk perilisan baru, harus di **merge** dengan cabang `master`.
+3. `feature/` : nama *branch* diawalai `feature/` dan diikuti nama *branch* yang mendiskripsikan nama fitur baru tersebut, contoh `feature/fitur-lupa-password`. Berisi *source code* hasil clone `dev` untuk  ditambahkan suatu fitur baru. jika suatu fitur selesai dikembangkan, harus di **merge** ke cabang `dev`.
+4. `bug-fix/` : nama *branch* dengan penamaan yang dawalai `bug-fix/` diikuti nama *branch* yang mendiskripsikan *bug* yang diperbaiki, contoh `bug-fix/data-nomor-ktp-tidak-terkirim`. Berisi *source code* hasil clone dari `master`, berisi perbaikan bug yang ditemukan di versi rilis. Jika suatu bug selesai diperbaiki, harus di **merge** ke cabang `master` dan `dev`.
 
