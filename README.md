@@ -4,7 +4,7 @@
 
 Kebutuhan dokumentasi untuk pengembangan, perbaikan dan perilisan suatu perangkat lunak menggunakan [semantic versioning 2.0.0](https://semver.org/lang/id/spec/v2.0.0.html) untuk dokumentasi perilisan dan [git](https://git-scm.com/doc) untuk kolaborasi dan monitoring source code.
 
-## Aturan Dokumentasi
+## Aturan Versioning perilisan
 
 ![SemVer 2](https://miro.medium.com/max/700/1*X0AvlnrTy5Vt2-cGiJCSvg.png)
 
