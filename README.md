@@ -4,7 +4,7 @@
 
 Kebutuhan dokumentasi untuk pengembangan, perbaikan dan perilisan suatu perangkat lunak menggunakan [semantic versioning 2.0.0](https://semver.org/lang/id/spec/v2.0.0.html) untuk dokumentasi perilisan dan [git](https://git-scm.com/doc) untuk kolaborasi dan monitoring source code.
 
-## Aturan Dokumentasi
+## Aturan Versioning perilisan
 
 1. Dokumentasi Perangkat lunak yang dibuat **BISA** dijelaskan dengan kode, atau ditulis di dokumentasi, ditulis dengan jelas dan akurat disetiap perilisan dari versi terbaru.
 2. Versi **HARUS** ditulis dalam bentuk **X.Y.Z**, dengan X, Y, Z bilangan bulat positif, dan **TIDAK BOLEH** didahului angka 0 (contoh 01.02.03). X adalah versi MAJOR, Y adalah minor, dan Z adalah patch.
