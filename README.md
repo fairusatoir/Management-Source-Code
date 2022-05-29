@@ -6,6 +6,8 @@ Kebutuhan dokumentasi untuk pengembangan, perbaikan dan perilisan suatu perangka
 
 ## Aturan Dokumentasi
 
+![SemVer 2](https://miro.medium.com/max/700/1*X0AvlnrTy5Vt2-cGiJCSvg.png)
+
 1. Dokumentasi Perangkat lunak yang dibuat **BISA** dijelaskan dengan kode, atau ditulis di dokumentasi, ditulis dengan jelas dan akurat disetiap perilisan dari versi terbaru.
 2. Versi **HARUS** ditulis dalam bentuk **X.Y.Z**, dengan X, Y, Z bilangan bulat positif, dan **TIDAK BOLEH** didahului angka 0 (contoh 01.02.03). X adalah versi MAJOR, Y adalah minor, dan Z adalah patch.
 3. Setiap perubahan **HARUS** merilis versi dengan penomoran baru. Isi dari versi tersebut **TIDAK BOLEH** diubah.
