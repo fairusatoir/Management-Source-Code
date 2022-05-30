@@ -36,3 +36,8 @@ Dalam  pengembangan, perbaikan dan perilisan perangkat lunak membutuhkan beberap
 3. `feature/` : nama *branch* diawalai `feature/` dan diikuti nama *branch* yang mendiskripsikan nama fitur baru tersebut, contoh `feature/fitur-lupa-password`. Berisi *source code* hasil clone `dev` untuk  ditambahkan suatu fitur baru. jika suatu fitur selesai dikembangkan, harus di **merge** ke cabang `dev`.
 4. `bug-fix/` : nama *branch* dengan penamaan yang dawalai `bug-fix/` diikuti nama *branch* yang mendiskripsikan *bug* yang diperbaiki, contoh `bug-fix/data-nomor-ktp-tidak-terkirim`. Berisi *source code* hasil clone dari `master`, berisi perbaikan bug yang ditemukan di versi rilis. Jika suatu bug selesai diperbaiki, harus di **merge** ke cabang `master` dan `dev`.
 
+### Commit
+feat: untuk menambah algoritma atau tambahan lainnya
+fix: untuk mengubah algoritma yang sudah ada atau memperbaiki
+docs: untuk mengubah atau membuat dokumentasi
+add: untuk mengubah algoritma atau tambahan lainnya (opsional)
