@@ -37,7 +37,7 @@ Dalam  pengembangan, perbaikan dan perilisan perangkat lunak membutuhkan beberap
 4. `bug-fix/` : nama *branch* dengan penamaan yang dawalai `bug-fix/` diikuti nama *branch* yang mendiskripsikan *bug* yang diperbaiki, contoh `bug-fix/data-nomor-ktp-tidak-terkirim`. Berisi *source code* hasil clone dari `master`, berisi perbaikan bug yang ditemukan di versi rilis. Jika suatu bug selesai diperbaiki, harus di **merge** ke cabang `master` dan `dev`.
 
 ### Commit
-- feat: untuk menambah algoritma atau tambahan lainnya
-- fix: untuk mengubah algoritma yang sudah ada atau memperbaiki
-- docs: untuk mengubah atau membuat dokumentasi
-- add: untuk mengubah algoritma atau tambahan lainnya (opsional)
+- `feat`: untuk menambah algoritma atau tambahan lainnya
+- `fix`: untuk mengubah algoritma yang sudah ada atau memperbaiki
+- `docs`: untuk mengubah atau membuat dokumentasi
+- `add`: untuk mengubah algoritma atau tambahan lainnya (opsional)
